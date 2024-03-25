@@ -18,11 +18,11 @@ export class AppController {
   @Get('android-developer')
   @UseGuards(AuthGuard("jwt"), new RoleGuard(CONSTANTS.ROLES.ANDROID_DEVELOPER))
   androidDeveloperData(@Request() req): string {
-    return "This is private data from android developer"+JSON.stringify(req.user);
+    return "This is private data from android developer" + JSON.stringify(req.user);
   }
   @Get('web-developer')
   @UseGuards(AuthGuard("jwt"), new RoleGuard(CONSTANTS.ROLES.WEB_DEVELOPER))
   webDeveloperData(@Request() req): string {
-    return "This is private data from web developer"+JSON.stringify(req.user);
+    return "This is private data from web developer" + JSON.stringify(req.user);
   }
 }

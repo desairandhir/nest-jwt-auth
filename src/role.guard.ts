@@ -1,8 +1,8 @@
 import { CanActivate, ExecutionContext } from "@nestjs/common";
 
 export class RoleGuard implements CanActivate {
-
     private rolePassed: string;
+
     constructor(role: string) {
         this.rolePassed = role;
     }

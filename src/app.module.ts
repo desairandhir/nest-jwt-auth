@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+
 import { AppController } from './app.controller';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
@@ -8,4 +9,4 @@ import { AuthModule } from './auth/auth.module';
   controllers: [AppController],
   providers: [],
 })
-export class AppModule {}
+export class AppModule { }

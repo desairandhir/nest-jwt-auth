@@ -11,7 +11,7 @@ export class UserService {
             password: '123456',
             email: 'admin@mail.com',
             age: 21,
-            role:CONSTANTS.ROLES.ANDROID_DEVELOPER
+            role: CONSTANTS.ROLES.ANDROID_DEVELOPER
         },
         {
             username: 'user1',
@@ -22,7 +22,7 @@ export class UserService {
         },
     ];
 
-    getUserByUserName(username: string): User{
-     return this.users.find((user)=>user.username==username);   
+    getUserByUserName(username: string): User {
+        return this.users.find((user) => user.username == username);
     }
 }
